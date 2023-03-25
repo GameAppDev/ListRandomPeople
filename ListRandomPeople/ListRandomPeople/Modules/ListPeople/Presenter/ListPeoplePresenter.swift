@@ -13,6 +13,8 @@ final class ListPeoplePresenter {
     private var interactor: IListPeoplePresenterToInteractor?
     private var router: IListPeoplePresenterToRouter?
     
+    private var isBusy: Bool = true
+    
     init(view: IListPeoplePresenterToView,
          interactor: IListPeoplePresenterToInteractor,
          router: IListPeoplePresenterToRouter) {
@@ -29,6 +31,7 @@ extension ListPeoplePresenter: IListPeopleViewToPresenter {
         view?.setTableView(isHidden: true)
         
         view?.showIndicatorView()
+        isBusy = true
         interactor?.fetchData(request: "")
     }
     
@@ -40,12 +43,16 @@ extension ListPeoplePresenter: IListPeopleViewToPresenter {
 extension ListPeoplePresenter: IListPeopleInteractorToPresenter {
     
     func setData<T>(data: T) {
+        isBusy = false
+        
         view?.hideIndicatorView()
         view?.setTableView(isHidden: false)
         view?.reloadTableView()
     }
     
     func setError(error: String) {
+        isBusy = false
+        
         view?.hideIndicatorView()
         view?.setTableView(isHidden: true)
         view?.showAlert(
@@ -59,6 +66,16 @@ extension ListPeoplePresenter: IListPeopleConnectorToPresenter {
     
     func getPeopleList() -> [Person] {
         return interactor?.getPeopleList() ?? []
+    }
+    
+    func getBusyStatus() -> Bool {
+        return isBusy
+    }
+    
+    func handlePeopleList() {
+        view?.showIndicatorView()
+        isBusy = true
+        interactor?.fetchData(request: "")
     }
     
     func handleDetail(index: Int) {

@@ -26,5 +26,7 @@ protocol IListPeoplePresenterToRouter: PresenterToRouter { }
 
 protocol IListPeopleConnectorToPresenter: ConnectorToPresenter {
     func getPeopleList() -> [Person]
+    func getBusyStatus() -> Bool
     func handleDetail(index: Int)
+    func handlePeopleList()
 }
