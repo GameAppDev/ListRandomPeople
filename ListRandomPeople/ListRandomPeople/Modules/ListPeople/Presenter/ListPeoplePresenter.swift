@@ -38,6 +38,13 @@ extension ListPeoplePresenter: IListPeopleViewToPresenter {
     func viewWillAppear() {
         view?.setNavigationBar?(title: "Random People List")
     }
+    
+    func handleRefreshData() {
+        interactor?.removePeopleList()
+        view?.showIndicatorView()
+        isBusy = true
+        interactor?.fetchData(request: "")
+    }
 }
 
 extension ListPeoplePresenter: IListPeopleInteractorToPresenter {
@@ -45,20 +52,23 @@ extension ListPeoplePresenter: IListPeopleInteractorToPresenter {
     func setData<T>(data: T) {
         isBusy = false
         
-        view?.hideIndicatorView()
         view?.setTableView(isHidden: false)
+        view?.endTableViewRefreshControl()
         view?.reloadTableView()
+        view?.hideIndicatorView()
     }
     
     func setError(error: String) {
         isBusy = false
         
-        view?.hideIndicatorView()
-        view?.setTableView(isHidden: true)
+        interactor?.removePeopleList()
+        view?.setTableView(isHidden: false)
+        view?.endTableViewRefreshControl()
         view?.showAlert(
             title: "Warning",
             message: error
         )
+        view?.hideIndicatorView()
     }
 }
 

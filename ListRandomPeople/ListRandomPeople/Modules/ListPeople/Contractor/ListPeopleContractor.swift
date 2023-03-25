@@ -11,9 +11,12 @@ protocol IListPeoplePresenterToView: PresenterToView {
     func setupTableView()
     func setTableView(isHidden: Bool)
     func reloadTableView()
+    func endTableViewRefreshControl()
 }
 
-protocol IListPeopleViewToPresenter: ViewToPresenter { }
+protocol IListPeopleViewToPresenter: ViewToPresenter {
+    func handleRefreshData()
+}
 
 protocol IListPeoplePresenterToInteractor: PresenterToInteractor {
     func getPeopleList() -> [Person]

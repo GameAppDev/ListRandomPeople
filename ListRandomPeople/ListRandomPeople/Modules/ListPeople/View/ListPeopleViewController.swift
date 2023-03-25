@@ -27,6 +27,10 @@ final class ListPeopleViewController: BaseViewController {
         
         presenter?.viewWillAppear?()
     }
+    
+    @objc private func refreshTableView() {
+        presenter?.handleRefreshData()
+    }
 }
 
 extension ListPeopleViewController: IListPeoplePresenterToView {
@@ -41,6 +45,12 @@ extension ListPeopleViewController: IListPeoplePresenterToView {
         listTableView.delegate = tableViewConnector
         listTableView.separatorStyle = .none
         listTableView.registerCell(ListTableViewCell.self)
+        listTableView.refreshControl = UIRefreshControl()
+        listTableView.refreshControl?.addTarget(
+            self,
+            action: #selector(refreshTableView),
+            for: .valueChanged
+        )
     }
     
     func setTableView(isHidden: Bool) {
@@ -49,6 +59,12 @@ extension ListPeopleViewController: IListPeoplePresenterToView {
     
     func reloadTableView() {
         listTableView.reloadData()
+    }
+    
+    func endTableViewRefreshControl() {
+        if let refreshControl = listTableView.refreshControl, refreshControl.isRefreshing {
+            refreshControl.endRefreshing()
+        }
     }
     
     func setNavigationBar(title: String) {
