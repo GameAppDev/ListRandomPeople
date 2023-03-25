@@ -12,11 +12,11 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupViews()
+        setupViewController()
         hideKeyboardWhenCicked()
     }
     
-    fileprivate func setupViews() {
+    fileprivate func setupViewController() {
         self.view.backgroundColor = UIColor.viewBGColour
     }
     
