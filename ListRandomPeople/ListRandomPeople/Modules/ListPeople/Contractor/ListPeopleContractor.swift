@@ -17,6 +17,7 @@ protocol IListPeopleViewToPresenter: ViewToPresenter { }
 
 protocol IListPeoplePresenterToInteractor: PresenterToInteractor {
     func getPeopleList() -> [Person]
+    func removePeopleList()
 }
 
 protocol IListPeopleInteractorToPresenter: InteractorToPresenter { }
