@@ -8,14 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		929607AB29CF3AB500B7DC76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929607AA29CF3AB500B7DC76 /* AppDelegate.swift */; };
-		929607AD29CF3AB500B7DC76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929607AC29CF3AB500B7DC76 /* SceneDelegate.swift */; };
-		929607AF29CF3AB500B7DC76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929607AE29CF3AB500B7DC76 /* ViewController.swift */; };
 		929607B229CF3AB500B7DC76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929607B029CF3AB500B7DC76 /* Main.storyboard */; };
 		929607B429CF3AB600B7DC76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929607B329CF3AB600B7DC76 /* Assets.xcassets */; };
 		929607B729CF3AB600B7DC76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929607B529CF3AB600B7DC76 /* LaunchScreen.storyboard */; };
 		929607C229CF3AB600B7DC76 /* ListRandomPeopleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929607C129CF3AB600B7DC76 /* ListRandomPeopleTests.swift */; };
 		929607CC29CF3AB600B7DC76 /* ListRandomPeopleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929607CB29CF3AB600B7DC76 /* ListRandomPeopleUITests.swift */; };
 		929607CE29CF3AB600B7DC76 /* ListRandomPeopleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929607CD29CF3AB600B7DC76 /* ListRandomPeopleUITestsLaunchTests.swift */; };
+		929607E329CF3C0100B7DC76 /* ListPeopleContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929607E229CF3C0100B7DC76 /* ListPeopleContractor.swift */; };
+		929607E529CF3C0F00B7DC76 /* ListPeopleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929607E429CF3C0F00B7DC76 /* ListPeopleRouter.swift */; };
+		929607E729CF3C2000B7DC76 /* ListPeopleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929607E629CF3C2000B7DC76 /* ListPeopleBuilder.swift */; };
+		929607EA29CF3C4200B7DC76 /* ListPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929607E829CF3C4200B7DC76 /* ListPeopleViewController.swift */; };
+		929607EB29CF3C4200B7DC76 /* ListPeopleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929607E929CF3C4200B7DC76 /* ListPeopleViewController.xib */; };
+		929607ED29CF3C5600B7DC76 /* ListPeoplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929607EC29CF3C5600B7DC76 /* ListPeoplePresenter.swift */; };
+		929607EF29CF3C6000B7DC76 /* ListPeopleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929607EE29CF3C6000B7DC76 /* ListPeopleInteractor.swift */; };
+		929607F229CF3CC500B7DC76 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929607F129CF3CC500B7DC76 /* BaseViewController.swift */; };
+		929607F729CF3DC800B7DC76 /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929607F629CF3DC800B7DC76 /* Colours.swift */; };
+		929607F929CF3DCF00B7DC76 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929607F829CF3DCF00B7DC76 /* Fonts.swift */; };
+		929607FD29CF3E0D00B7DC76 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 929607FB29CF3E0D00B7DC76 /* Nunito-Bold.ttf */; };
+		929607FE29CF3E0D00B7DC76 /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 929607FC29CF3E0D00B7DC76 /* Nunito-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +48,6 @@
 /* Begin PBXFileReference section */
 		929607A729CF3AB500B7DC76 /* ListRandomPeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListRandomPeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		929607AA29CF3AB500B7DC76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		929607AC29CF3AB500B7DC76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		929607AE29CF3AB500B7DC76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		929607B129CF3AB500B7DC76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		929607B329CF3AB600B7DC76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		929607B629CF3AB600B7DC76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +57,18 @@
 		929607C729CF3AB600B7DC76 /* ListRandomPeopleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListRandomPeopleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		929607CB29CF3AB600B7DC76 /* ListRandomPeopleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRandomPeopleUITests.swift; sourceTree = "<group>"; };
 		929607CD29CF3AB600B7DC76 /* ListRandomPeopleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRandomPeopleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		929607E229CF3C0100B7DC76 /* ListPeopleContractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPeopleContractor.swift; sourceTree = "<group>"; };
+		929607E429CF3C0F00B7DC76 /* ListPeopleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPeopleRouter.swift; sourceTree = "<group>"; };
+		929607E629CF3C2000B7DC76 /* ListPeopleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPeopleBuilder.swift; sourceTree = "<group>"; };
+		929607E829CF3C4200B7DC76 /* ListPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPeopleViewController.swift; sourceTree = "<group>"; };
+		929607E929CF3C4200B7DC76 /* ListPeopleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPeopleViewController.xib; sourceTree = "<group>"; };
+		929607EC29CF3C5600B7DC76 /* ListPeoplePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPeoplePresenter.swift; sourceTree = "<group>"; };
+		929607EE29CF3C6000B7DC76 /* ListPeopleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPeopleInteractor.swift; sourceTree = "<group>"; };
+		929607F129CF3CC500B7DC76 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		929607F629CF3DC800B7DC76 /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
+		929607F829CF3DCF00B7DC76 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		929607FB29CF3E0D00B7DC76 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		929607FC29CF3E0D00B7DC76 /* Nunito-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +119,12 @@
 		929607A929CF3AB500B7DC76 /* ListRandomPeople */ = {
 			isa = PBXGroup;
 			children = (
-				929607AA29CF3AB500B7DC76 /* AppDelegate.swift */,
-				929607AC29CF3AB500B7DC76 /* SceneDelegate.swift */,
-				929607AE29CF3AB500B7DC76 /* ViewController.swift */,
-				929607B029CF3AB500B7DC76 /* Main.storyboard */,
-				929607B329CF3AB600B7DC76 /* Assets.xcassets */,
-				929607B529CF3AB600B7DC76 /* LaunchScreen.storyboard */,
+				929607DA29CF3B8B00B7DC76 /* Application */,
+				929607DB29CF3B9C00B7DC76 /* Modules */,
+				929607F029CF3CBB00B7DC76 /* Commons */,
+				929607F329CF3D1A00B7DC76 /* Utils */,
+				929607F529CF3DBE00B7DC76 /* Theme */,
+				929607F429CF3D3D00B7DC76 /* SupportingFiles */,
 				929607B829CF3AB600B7DC76 /* Info.plist */,
 			);
 			path = ListRandomPeople;
@@ -125,6 +145,120 @@
 				929607CD29CF3AB600B7DC76 /* ListRandomPeopleUITestsLaunchTests.swift */,
 			);
 			path = ListRandomPeopleUITests;
+			sourceTree = "<group>";
+		};
+		929607DA29CF3B8B00B7DC76 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				929607AA29CF3AB500B7DC76 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		929607DB29CF3B9C00B7DC76 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				929607DC29CF3BAB00B7DC76 /* ListPeople */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		929607DC29CF3BAB00B7DC76 /* ListPeople */ = {
+			isa = PBXGroup;
+			children = (
+				929607DD29CF3BC100B7DC76 /* Contractor */,
+				929607DE29CF3BCA00B7DC76 /* Router */,
+				929607DF29CF3BCF00B7DC76 /* View */,
+				929607E029CF3BD600B7DC76 /* Presenter */,
+				929607E129CF3BDD00B7DC76 /* Interactor */,
+			);
+			path = ListPeople;
+			sourceTree = "<group>";
+		};
+		929607DD29CF3BC100B7DC76 /* Contractor */ = {
+			isa = PBXGroup;
+			children = (
+				929607E229CF3C0100B7DC76 /* ListPeopleContractor.swift */,
+			);
+			path = Contractor;
+			sourceTree = "<group>";
+		};
+		929607DE29CF3BCA00B7DC76 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				929607E429CF3C0F00B7DC76 /* ListPeopleRouter.swift */,
+				929607E629CF3C2000B7DC76 /* ListPeopleBuilder.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		929607DF29CF3BCF00B7DC76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				929607E829CF3C4200B7DC76 /* ListPeopleViewController.swift */,
+				929607E929CF3C4200B7DC76 /* ListPeopleViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		929607E029CF3BD600B7DC76 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				929607EC29CF3C5600B7DC76 /* ListPeoplePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		929607E129CF3BDD00B7DC76 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				929607EE29CF3C6000B7DC76 /* ListPeopleInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		929607F029CF3CBB00B7DC76 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				929607F129CF3CC500B7DC76 /* BaseViewController.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		929607F329CF3D1A00B7DC76 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		929607F429CF3D3D00B7DC76 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				929607B029CF3AB500B7DC76 /* Main.storyboard */,
+				929607B529CF3AB600B7DC76 /* LaunchScreen.storyboard */,
+				929607B329CF3AB600B7DC76 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		929607F529CF3DBE00B7DC76 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				929607FA29CF3DD900B7DC76 /* Fonts */,
+				929607F629CF3DC800B7DC76 /* Colours.swift */,
+				929607F829CF3DCF00B7DC76 /* Fonts.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		929607FA29CF3DD900B7DC76 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				929607FB29CF3E0D00B7DC76 /* Nunito-Bold.ttf */,
+				929607FC29CF3E0D00B7DC76 /* Nunito-Medium.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +366,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				929607B729CF3AB600B7DC76 /* LaunchScreen.storyboard in Resources */,
+				929607FD29CF3E0D00B7DC76 /* Nunito-Bold.ttf in Resources */,
+				929607FE29CF3E0D00B7DC76 /* Nunito-Medium.ttf in Resources */,
+				929607EB29CF3C4200B7DC76 /* ListPeopleViewController.xib in Resources */,
 				929607B429CF3AB600B7DC76 /* Assets.xcassets in Resources */,
 				929607B229CF3AB500B7DC76 /* Main.storyboard in Resources */,
 			);
@@ -258,9 +395,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				929607AF29CF3AB500B7DC76 /* ViewController.swift in Sources */,
 				929607AB29CF3AB500B7DC76 /* AppDelegate.swift in Sources */,
-				929607AD29CF3AB500B7DC76 /* SceneDelegate.swift in Sources */,
+				929607ED29CF3C5600B7DC76 /* ListPeoplePresenter.swift in Sources */,
+				929607E329CF3C0100B7DC76 /* ListPeopleContractor.swift in Sources */,
+				929607E729CF3C2000B7DC76 /* ListPeopleBuilder.swift in Sources */,
+				929607EA29CF3C4200B7DC76 /* ListPeopleViewController.swift in Sources */,
+				929607F229CF3CC500B7DC76 /* BaseViewController.swift in Sources */,
+				929607F929CF3DCF00B7DC76 /* Fonts.swift in Sources */,
+				929607E529CF3C0F00B7DC76 /* ListPeopleRouter.swift in Sources */,
+				929607F729CF3DC800B7DC76 /* Colours.swift in Sources */,
+				929607EF29CF3C6000B7DC76 /* ListPeopleInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +510,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +564,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -436,19 +580,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1000;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ListRandomPeople/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oguzzylcn.ListRandomPeople;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -463,19 +607,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1000;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ListRandomPeople/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oguzzylcn.ListRandomPeople;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
