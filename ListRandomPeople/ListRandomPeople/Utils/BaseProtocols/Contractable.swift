@@ -38,7 +38,7 @@ extension UIViewController: PresenterToView {
         ))
         self.navigationController?.present(
             alertController,
-            animated: true,
+            animated: false,
             completion: nil
         )
     }
@@ -65,7 +65,7 @@ protocol InteractorToPresenter: AnyObject {
 }
 
 // MARK: - PresenterToRouter
-@objc protocol PresenterToRouter: AnyObject { }
+protocol PresenterToRouter: AnyObject { }
 
 // MARK: - ConnectorToPresenter
-@objc protocol ConnectorToPresenter: AnyObject { }
+protocol ConnectorToPresenter: AnyObject { }
