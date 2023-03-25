@@ -9,9 +9,9 @@ import UIKit
 
 extension UIFont {
     
-    static let navbarTextFont  = UIFont(name: AppFonts.bold.fontName, size: CGFloat(22).ws)
-    static let textFont        = UIFont(name: AppFonts.medium.fontName, size: CGFloat(14).ws)
-    static let titleFont       = UIFont(name: AppFonts.bold.fontName, size: CGFloat(16).ws)
+    static let navbarTextFont  = UIFont(name: AppFonts.bold.fontName, size: CGFloat(24).ws)
+    static let textFont        = UIFont(name: AppFonts.medium.fontName, size: CGFloat(16).ws)
+    static let titleFont       = UIFont(name: AppFonts.bold.fontName, size: CGFloat(18).ws)
 }
 
 enum AppFonts {
