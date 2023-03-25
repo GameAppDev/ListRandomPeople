@@ -13,6 +13,7 @@ final class ListPeopleViewController: BaseViewController {
     @IBOutlet private weak var listTableView: UITableView!
     
     var presenter: IListPeopleViewToPresenter?
+    var tableViewConnector: ListPeopleTableViewConnector?
     
     // MARK: Life Cycle
     override func viewDidLoad() {
@@ -36,9 +37,10 @@ extension ListPeopleViewController: IListPeoplePresenterToView {
                                                   left: CGFloat(0),
                                                   bottom: CGFloat(15).ws,
                                                   right: CGFloat(0))
-        //TODO: dataSource, delegate
+        listTableView.dataSource = tableViewConnector
+        listTableView.delegate = tableViewConnector
         listTableView.separatorStyle = .none
-        //TODO: registerCell
+        listTableView.registerCell(ListTableViewCell.self)
     }
     
     func setTableView(isHidden: Bool) {

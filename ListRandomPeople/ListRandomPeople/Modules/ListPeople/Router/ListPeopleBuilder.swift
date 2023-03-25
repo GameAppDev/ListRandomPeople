@@ -16,10 +16,10 @@ struct ListPeopleBuilder {
         let presenter = ListPeoplePresenter(view: viewController,
                                             interactor: interactor,
                                             router: router)
-        //TODO: add tableViewConnector
+        let tableViewConnector = ListPeopleTableViewConnector(presenter: presenter)
         
         viewController.presenter = presenter
-        //TODO: vc.connector = connector
+        viewController.tableViewConnector = tableViewConnector
         
         interactor.presenter = presenter
         
