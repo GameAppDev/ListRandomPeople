@@ -23,4 +23,9 @@ extension ListPeopleInteractor: IListPeoplePresenterToInteractor {
     func getPeopleList() -> [Person] {
         return peopleList
     }
+
+    // MARK: Remove
+    func removePeopleList() {
+        peopleList.removeAll()
+    }
 }
