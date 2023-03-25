@@ -39,6 +39,10 @@
 		9296081B29CF4E3A00B7DC76 /* ActivityIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9296081729CF4E3A00B7DC76 /* ActivityIndicatorManager.swift */; };
 		9296081C29CF4E3A00B7DC76 /* ActivityIndicator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9296081929CF4E3A00B7DC76 /* ActivityIndicator.xib */; };
 		9296081D29CF4E3A00B7DC76 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9296081A29CF4E3A00B7DC76 /* ActivityIndicator.swift */; };
+		9296082029CF6A4A00B7DC76 /* ListPeopleTableViewConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9296081F29CF6A4A00B7DC76 /* ListPeopleTableViewConnector.swift */; };
+		9296082429CF6A8700B7DC76 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9296082229CF6A8700B7DC76 /* ListTableViewCell.swift */; };
+		9296082529CF6A8700B7DC76 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9296082329CF6A8700B7DC76 /* ListTableViewCell.xib */; };
+		9296082729CF6E7F00B7DC76 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9296082629CF6E7F00B7DC76 /* Int+Ext.swift */; };
 		E59F41CDA315B533EF8BC205 /* Pods_ListRandomPeopleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B7A3846A7B1A1E830A9359 /* Pods_ListRandomPeopleTests.framework */; };
 		FFF294C464790C3A8C90A067 /* Pods_ListRandomPeople_ListRandomPeopleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A956DAC9FF69E19D054DC0AF /* Pods_ListRandomPeople_ListRandomPeopleUITests.framework */; };
 /* End PBXBuildFile section */
@@ -98,6 +102,10 @@
 		9296081729CF4E3A00B7DC76 /* ActivityIndicatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorManager.swift; sourceTree = "<group>"; };
 		9296081929CF4E3A00B7DC76 /* ActivityIndicator.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityIndicator.xib; sourceTree = "<group>"; };
 		9296081A29CF4E3A00B7DC76 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		9296081F29CF6A4A00B7DC76 /* ListPeopleTableViewConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPeopleTableViewConnector.swift; sourceTree = "<group>"; };
+		9296082229CF6A8700B7DC76 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		9296082329CF6A8700B7DC76 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		9296082629CF6E7F00B7DC76 /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
 		A2A4BCA382A36E90D201C729 /* Pods-ListRandomPeople.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListRandomPeople.release.xcconfig"; path = "Target Support Files/Pods-ListRandomPeople/Pods-ListRandomPeople.release.xcconfig"; sourceTree = "<group>"; };
 		A31D18FD646E02B2B0241928 /* Pods-ListRandomPeople-ListRandomPeopleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListRandomPeople-ListRandomPeopleUITests.release.xcconfig"; path = "Target Support Files/Pods-ListRandomPeople-ListRandomPeopleUITests/Pods-ListRandomPeople-ListRandomPeopleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A956DAC9FF69E19D054DC0AF /* Pods_ListRandomPeople_ListRandomPeopleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListRandomPeople_ListRandomPeopleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -246,6 +254,7 @@
 		929607DF29CF3BCF00B7DC76 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9296081E29CF69BD00B7DC76 /* Connector */,
 				929607E829CF3C4200B7DC76 /* ListPeopleViewController.swift */,
 				929607E929CF3C4200B7DC76 /* ListPeopleViewController.xib */,
 			);
@@ -340,6 +349,7 @@
 				9296080629CF417C00B7DC76 /* NSObject+Ext.swift */,
 				9296080829CF419300B7DC76 /* UITableView+Ext.swift */,
 				9296080E29CF44AB00B7DC76 /* CGFloat+Ext.swift */,
+				9296082629CF6E7F00B7DC76 /* Int+Ext.swift */,
 				9296080C29CF442600B7DC76 /* UIView+Ext.swift */,
 				9296080A29CF41AE00B7DC76 /* UIViewController+Ext.swift */,
 			);
@@ -378,6 +388,24 @@
 				9296081A29CF4E3A00B7DC76 /* ActivityIndicator.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9296081E29CF69BD00B7DC76 /* Connector */ = {
+			isa = PBXGroup;
+			children = (
+				9296081F29CF6A4A00B7DC76 /* ListPeopleTableViewConnector.swift */,
+				9296082129CF6A6000B7DC76 /* TableViewCells */,
+			);
+			path = Connector;
+			sourceTree = "<group>";
+		};
+		9296082129CF6A6000B7DC76 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				9296082229CF6A8700B7DC76 /* ListTableViewCell.swift */,
+				9296082329CF6A8700B7DC76 /* ListTableViewCell.xib */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 		DC40EEE1A7BB5164F5B60676 /* Pods */ = {
@@ -506,6 +534,7 @@
 				929607B729CF3AB600B7DC76 /* LaunchScreen.storyboard in Resources */,
 				929607FD29CF3E0D00B7DC76 /* Nunito-Bold.ttf in Resources */,
 				929607FE29CF3E0D00B7DC76 /* Nunito-Medium.ttf in Resources */,
+				9296082529CF6A8700B7DC76 /* ListTableViewCell.xib in Resources */,
 				9296081229CF4C6600B7DC76 /* indicator-animation-view.json in Resources */,
 				929607EB29CF3C4200B7DC76 /* ListPeopleViewController.xib in Resources */,
 				929607B429CF3AB600B7DC76 /* Assets.xcassets in Resources */,
@@ -642,11 +671,13 @@
 				929607AB29CF3AB500B7DC76 /* AppDelegate.swift in Sources */,
 				929607ED29CF3C5600B7DC76 /* ListPeoplePresenter.swift in Sources */,
 				9296080B29CF41AE00B7DC76 /* UIViewController+Ext.swift in Sources */,
+				9296082029CF6A4A00B7DC76 /* ListPeopleTableViewConnector.swift in Sources */,
 				929607E329CF3C0100B7DC76 /* ListPeopleContractor.swift in Sources */,
 				929607E729CF3C2000B7DC76 /* ListPeopleBuilder.swift in Sources */,
 				929607EA29CF3C4200B7DC76 /* ListPeopleViewController.swift in Sources */,
 				929607F229CF3CC500B7DC76 /* BaseViewController.swift in Sources */,
 				9296081B29CF4E3A00B7DC76 /* ActivityIndicatorManager.swift in Sources */,
+				9296082429CF6A8700B7DC76 /* ListTableViewCell.swift in Sources */,
 				929607F929CF3DCF00B7DC76 /* Fonts.swift in Sources */,
 				929607E529CF3C0F00B7DC76 /* ListPeopleRouter.swift in Sources */,
 				929607F729CF3DC800B7DC76 /* Colours.swift in Sources */,
@@ -657,6 +688,7 @@
 				9296080929CF419300B7DC76 /* UITableView+Ext.swift in Sources */,
 				9296080229CF411800B7DC76 /* Contractable.swift in Sources */,
 				929607EF29CF3C6000B7DC76 /* ListPeopleInteractor.swift in Sources */,
+				9296082729CF6E7F00B7DC76 /* Int+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
