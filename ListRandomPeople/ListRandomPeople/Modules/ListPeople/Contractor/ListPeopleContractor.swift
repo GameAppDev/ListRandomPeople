@@ -6,3 +6,24 @@
 //
 
 import Foundation
+
+protocol IListPeoplePresenterToView: PresenterToView {
+    func setupTableView()
+    func setTableView(isHidden: Bool)
+    func reloadTableView()
+}
+
+protocol IListPeopleViewToPresenter: ViewToPresenter { }
+
+protocol IListPeoplePresenterToInteractor: PresenterToInteractor {
+    func getPeopleList() -> [Person]
+}
+
+protocol IListPeopleInteractorToPresenter: InteractorToPresenter { }
+
+protocol IListPeoplePresenterToRouter: PresenterToRouter { }
+
+protocol IListPeopleConnectorToPresenter: ConnectorToPresenter {
+    func getPeopleList() -> [Person]
+    func handleDetail(index: Int)
+}
