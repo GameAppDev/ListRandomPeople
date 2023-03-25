@@ -48,4 +48,10 @@ extension ListPeopleTableViewConnector: UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter?.handleDetail(index: indexPath.row)
     }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if let isBusy = presenter?.getBusyStatus(), !isBusy && (presenter?.getPeopleList().count == indexPath.row + 1) {
+            presenter?.handlePeopleList()
+        }
+    }
 }
