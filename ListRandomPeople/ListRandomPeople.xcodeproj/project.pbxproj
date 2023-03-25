@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		728B4600412A4981C209D7A8 /* Pods_ListRandomPeople.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD570310DA789EDC010D81BF /* Pods_ListRandomPeople.framework */; };
 		929607AB29CF3AB500B7DC76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929607AA29CF3AB500B7DC76 /* AppDelegate.swift */; };
 		929607B229CF3AB500B7DC76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929607B029CF3AB500B7DC76 /* Main.storyboard */; };
 		929607B429CF3AB600B7DC76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929607B329CF3AB600B7DC76 /* Assets.xcassets */; };
@@ -26,6 +27,8 @@
 		929607F929CF3DCF00B7DC76 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929607F829CF3DCF00B7DC76 /* Fonts.swift */; };
 		929607FD29CF3E0D00B7DC76 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 929607FB29CF3E0D00B7DC76 /* Nunito-Bold.ttf */; };
 		929607FE29CF3E0D00B7DC76 /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 929607FC29CF3E0D00B7DC76 /* Nunito-Medium.ttf */; };
+		E59F41CDA315B533EF8BC205 /* Pods_ListRandomPeopleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B7A3846A7B1A1E830A9359 /* Pods_ListRandomPeopleTests.framework */; };
+		FFF294C464790C3A8C90A067 /* Pods_ListRandomPeople_ListRandomPeopleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A956DAC9FF69E19D054DC0AF /* Pods_ListRandomPeople_ListRandomPeopleUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3946E0677B1C8126D554E172 /* Pods-ListRandomPeople-ListRandomPeopleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListRandomPeople-ListRandomPeopleUITests.debug.xcconfig"; path = "Target Support Files/Pods-ListRandomPeople-ListRandomPeopleUITests/Pods-ListRandomPeople-ListRandomPeopleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6733B6A26E30792198E946F6 /* Pods-ListRandomPeopleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListRandomPeopleTests.debug.xcconfig"; path = "Target Support Files/Pods-ListRandomPeopleTests/Pods-ListRandomPeopleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		929607A729CF3AB500B7DC76 /* ListRandomPeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListRandomPeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		929607AA29CF3AB500B7DC76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		929607B129CF3AB500B7DC76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +74,13 @@
 		929607F829CF3DCF00B7DC76 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		929607FB29CF3E0D00B7DC76 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		929607FC29CF3E0D00B7DC76 /* Nunito-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Medium.ttf"; sourceTree = "<group>"; };
+		A2A4BCA382A36E90D201C729 /* Pods-ListRandomPeople.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListRandomPeople.release.xcconfig"; path = "Target Support Files/Pods-ListRandomPeople/Pods-ListRandomPeople.release.xcconfig"; sourceTree = "<group>"; };
+		A31D18FD646E02B2B0241928 /* Pods-ListRandomPeople-ListRandomPeopleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListRandomPeople-ListRandomPeopleUITests.release.xcconfig"; path = "Target Support Files/Pods-ListRandomPeople-ListRandomPeopleUITests/Pods-ListRandomPeople-ListRandomPeopleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A956DAC9FF69E19D054DC0AF /* Pods_ListRandomPeople_ListRandomPeopleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListRandomPeople_ListRandomPeopleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B3C2861027F59AA04FAB05 /* Pods-ListRandomPeopleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListRandomPeopleTests.release.xcconfig"; path = "Target Support Files/Pods-ListRandomPeopleTests/Pods-ListRandomPeopleTests.release.xcconfig"; sourceTree = "<group>"; };
+		BD570310DA789EDC010D81BF /* Pods_ListRandomPeople.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListRandomPeople.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6B7A3846A7B1A1E830A9359 /* Pods_ListRandomPeopleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListRandomPeopleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6D5B286CCE7B72B42F92B2 /* Pods-ListRandomPeople.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListRandomPeople.debug.xcconfig"; path = "Target Support Files/Pods-ListRandomPeople/Pods-ListRandomPeople.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				728B4600412A4981C209D7A8 /* Pods_ListRandomPeople.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E59F41CDA315B533EF8BC205 /* Pods_ListRandomPeopleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +104,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFF294C464790C3A8C90A067 /* Pods_ListRandomPeople_ListRandomPeopleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AF82F7D7B25F13D5BE3AFD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD570310DA789EDC010D81BF /* Pods_ListRandomPeople.framework */,
+				A956DAC9FF69E19D054DC0AF /* Pods_ListRandomPeople_ListRandomPeopleUITests.framework */,
+				E6B7A3846A7B1A1E830A9359 /* Pods_ListRandomPeopleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9296079E29CF3AB500B7DC76 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +128,8 @@
 				929607C029CF3AB600B7DC76 /* ListRandomPeopleTests */,
 				929607CA29CF3AB600B7DC76 /* ListRandomPeopleUITests */,
 				929607A829CF3AB500B7DC76 /* Products */,
+				DC40EEE1A7BB5164F5B60676 /* Pods */,
+				7AF82F7D7B25F13D5BE3AFD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -261,6 +288,20 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		DC40EEE1A7BB5164F5B60676 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA6D5B286CCE7B72B42F92B2 /* Pods-ListRandomPeople.debug.xcconfig */,
+				A2A4BCA382A36E90D201C729 /* Pods-ListRandomPeople.release.xcconfig */,
+				3946E0677B1C8126D554E172 /* Pods-ListRandomPeople-ListRandomPeopleUITests.debug.xcconfig */,
+				A31D18FD646E02B2B0241928 /* Pods-ListRandomPeople-ListRandomPeopleUITests.release.xcconfig */,
+				6733B6A26E30792198E946F6 /* Pods-ListRandomPeopleTests.debug.xcconfig */,
+				A9B3C2861027F59AA04FAB05 /* Pods-ListRandomPeopleTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 929607D129CF3AB600B7DC76 /* Build configuration list for PBXNativeTarget "ListRandomPeople" */;
 			buildPhases = (
+				E590ACA7D400036BC40A42B6 /* [CP] Check Pods Manifest.lock */,
 				929607A329CF3AB500B7DC76 /* Sources */,
 				929607A429CF3AB500B7DC76 /* Frameworks */,
 				929607A529CF3AB500B7DC76 /* Resources */,
+				8D45C0E162BB509358D488AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -285,6 +328,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 929607D429CF3AB600B7DC76 /* Build configuration list for PBXNativeTarget "ListRandomPeopleTests" */;
 			buildPhases = (
+				F36BBD5ADCA2E04B9B837155 /* [CP] Check Pods Manifest.lock */,
 				929607B929CF3AB600B7DC76 /* Sources */,
 				929607BA29CF3AB600B7DC76 /* Frameworks */,
 				929607BB29CF3AB600B7DC76 /* Resources */,
@@ -303,9 +347,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 929607D729CF3AB600B7DC76 /* Build configuration list for PBXNativeTarget "ListRandomPeopleUITests" */;
 			buildPhases = (
+				3B643BAEA557D1F97E58508E /* [CP] Check Pods Manifest.lock */,
 				929607C329CF3AB600B7DC76 /* Sources */,
 				929607C429CF3AB600B7DC76 /* Frameworks */,
 				929607C529CF3AB600B7DC76 /* Resources */,
+				0F8A32CC02101FF50DE64693 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -389,6 +435,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F8A32CC02101FF50DE64693 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ListRandomPeople-ListRandomPeopleUITests/Pods-ListRandomPeople-ListRandomPeopleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ListRandomPeople-ListRandomPeopleUITests/Pods-ListRandomPeople-ListRandomPeopleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ListRandomPeople-ListRandomPeopleUITests/Pods-ListRandomPeople-ListRandomPeopleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B643BAEA557D1F97E58508E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ListRandomPeople-ListRandomPeopleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D45C0E162BB509358D488AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ListRandomPeople/Pods-ListRandomPeople-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ListRandomPeople/Pods-ListRandomPeople-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ListRandomPeople/Pods-ListRandomPeople-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E590ACA7D400036BC40A42B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ListRandomPeople-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F36BBD5ADCA2E04B9B837155 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ListRandomPeopleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		929607A329CF3AB500B7DC76 /* Sources */ = {
@@ -576,6 +725,7 @@
 		};
 		929607D229CF3AB600B7DC76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA6D5B286CCE7B72B42F92B2 /* Pods-ListRandomPeople.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -603,6 +753,7 @@
 		};
 		929607D329CF3AB600B7DC76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2A4BCA382A36E90D201C729 /* Pods-ListRandomPeople.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -630,6 +781,7 @@
 		};
 		929607D529CF3AB600B7DC76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6733B6A26E30792198E946F6 /* Pods-ListRandomPeopleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -649,6 +801,7 @@
 		};
 		929607D629CF3AB600B7DC76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9B3C2861027F59AA04FAB05 /* Pods-ListRandomPeopleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -668,6 +821,7 @@
 		};
 		929607D829CF3AB600B7DC76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3946E0677B1C8126D554E172 /* Pods-ListRandomPeople-ListRandomPeopleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -685,6 +839,7 @@
 		};
 		929607D929CF3AB600B7DC76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A31D18FD646E02B2B0241928 /* Pods-ListRandomPeople-ListRandomPeopleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
