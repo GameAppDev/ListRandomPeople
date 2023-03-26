@@ -13,21 +13,19 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         
         setupViewController()
-        hideKeyboardWhenCicked()
     }
     
-    fileprivate func setupViewController() {
+    private func setupViewController() {
         self.view.backgroundColor = UIColor.viewBGColour
     }
     
     public func setNavigationBarItems(title: String) {
-        self.navigationItem.title = title
-        
         let textAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.navbarTextColour,
             NSAttributedString.Key.font: UIFont.navbarTextFont
         ]
         
+        self.navigationItem.title = title
         self.navigationController?.navigationBar.titleTextAttributes = textAttributes as [NSAttributedString.Key : Any]
     }
 }

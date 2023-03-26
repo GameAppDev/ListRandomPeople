@@ -24,7 +24,7 @@ final class ListTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    fileprivate func setupCell() {
+    private func setupCell() {
         containerView.backgroundColor = UIColor.listCellBGColour
         containerView.roundCorners(size: CGFloat(10).ws)
         containerView.setBorder(width: CGFloat(1).ws,

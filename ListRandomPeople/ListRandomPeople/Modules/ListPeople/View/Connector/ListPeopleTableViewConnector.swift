@@ -28,10 +28,6 @@ extension ListPeopleTableViewConnector: UITableViewDataSource, UITableViewDelega
     }
     
     // MARK: - Cells
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
-    }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ListTableViewCell.className,
                                                        for: indexPath) as? ListTableViewCell
@@ -45,13 +41,17 @@ extension ListPeopleTableViewConnector: UITableViewDataSource, UITableViewDelega
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter?.handleDetail(index: indexPath.row)
-    }
-    
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if let isBusy = presenter?.getBusyStatus(), !isBusy && (presenter?.getPeopleList().count == indexPath.row + 1) {
             presenter?.handlePeopleList()
         }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.handleDetail(index: indexPath.row)
     }
 }

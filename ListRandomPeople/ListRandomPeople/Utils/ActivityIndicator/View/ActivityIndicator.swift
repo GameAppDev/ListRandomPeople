@@ -42,7 +42,7 @@ import Lottie
         self.layoutIfNeeded()
     }
 
-    fileprivate func setDefaultLoading() {
+    private func setDefaultLoading() {
         indicatorAnimationView.backgroundBehavior = .pauseAndRestore
         indicatorAnimationView.loopMode = .loop
         indicatorAnimationView.animation = LottieAnimation.named("indicator-animation-view")

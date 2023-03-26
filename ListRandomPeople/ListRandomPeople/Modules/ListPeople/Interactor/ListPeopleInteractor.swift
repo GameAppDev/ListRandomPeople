@@ -25,7 +25,6 @@ extension ListPeopleInteractor: IListPeoplePresenterToInteractor {
             if let response = response {
                 self.peopleList.append(contentsOf: response.people)
                 self.nextNumber = response.next ?? "0"
-                
                 self.presenter?.setData(data: self.peopleList)
             } else if let error = error {
                 self.presenter?.setError(error: error.errorDescription)
